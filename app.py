@@ -24,6 +24,12 @@ def get_mascots():
 
 @APP.route('/hello',methods=['GET'])
 def hello_world():
+    # python pylint C0116规范
+    """
+    Function:test hello world。
+    Input: null
+    Returns: hello world
+    """
     return jsonify({'message':'Hello, World!'})
     # return 'Hello, World!'
 
