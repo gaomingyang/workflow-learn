@@ -1,3 +1,5 @@
+// used by artifact.yaml
+
 // Credits:
 // https://yourbasic.org/golang/http-server-example/
 // https://stackoverflow.com/a/42533360/2308522

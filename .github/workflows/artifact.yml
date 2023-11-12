@@ -1,3 +1,4 @@
+# using hello-server.go and test.sh
 name: artifact
 
 on: [push]
@@ -47,7 +48,7 @@ jobs:
         name: linux
 
     - name: Test ${{ env.FILE_NAME }}
-      run: source ./test.sh
+      run: source ./test_hello_server.sh
 
   test-windows:
     name: Test Windows
