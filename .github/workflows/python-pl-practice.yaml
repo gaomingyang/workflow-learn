@@ -3,7 +3,7 @@ name: Python pipeline practice
 on:
     push:
         branches:
-            -main
+            - main
 
 jobs:
     test:
