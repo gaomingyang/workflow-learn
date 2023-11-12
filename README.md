@@ -4,9 +4,9 @@
 ## CI/CD Workflow
 python-pipeline.yaml  
 
-### Build Status Badge: ![](https://github.com/gaomingyang/workflow-learn/workflows/Python Application Pipeline/badge.svg)
+**Build Status Badge**: ![](https://github.com/gaomingyang/workflow-learn/workflows/Python%20Application%20Pipeline/badge.svg)
 
-### Use Case: Continuous Integration
+**Use Case: Continuous Integration**
 Demonstrating continuous integration with GitHub Actions
 
 Files include:
