@@ -11,6 +11,7 @@ APP = Flask(__name__)
 with open('data.json', 'r', encoding="utf8") as data:
     MASCOTS = json.load(data)
 
+
 @APP.route('/', methods=['GET'])
 def get_mascots():
     """
@@ -20,10 +21,12 @@ def get_mascots():
     """
     return jsonify(MASCOTS)
 
+
 @APP.route('/hello')
 def hello_world():
     return jsonify({'message':'Hello, World!'})
     # return 'Hello, World!'
+
 
 @APP.route('/<guid>', methods=['GET'])
 def get_mascot(guid):
