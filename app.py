@@ -22,7 +22,7 @@ def get_mascots():
     return jsonify(MASCOTS)
 
 
-@APP.route('/hello')
+@APP.route('/hello',methods=['GET'])
 def hello_world():
     return jsonify({'message':'Hello, World!'})
     # return 'Hello, World!'
