@@ -1,0 +1,23 @@
+name: Python pipeline practice
+
+on:
+    push:
+        branches:
+            -main
+
+jobs:
+    test:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4  #省略了name
+            - run: python hello_python.py
+    
+    build:
+        needs: [test]
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+            - uses: actions/upload-artifact@v3
+              with:
+                name: hello_python
+                path: ./hello_python.py
