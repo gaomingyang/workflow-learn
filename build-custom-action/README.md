@@ -26,4 +26,3 @@ jobs:
       with:
         args: 'FIXED'
 ```
-
