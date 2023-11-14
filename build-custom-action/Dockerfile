@@ -9,6 +9,9 @@ RUN apk add --no-cache \
         which http && \
         which jq
 
-COPY entrypoint.sh /usr/loca/bin/entrypoint.sh
+COPY entrypoint.sh /usr/local/bin/entrypoint.sh
+COPY sample_push_event.json /sample_push_event.json
+
+RUN chmod +x /usr/local/bin/entrypoint.sh
 
 ENTRYPOINT [ "entrypoint.sh" ]
