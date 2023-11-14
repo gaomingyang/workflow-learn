@@ -9,7 +9,7 @@ jobs:
     buid:
         runs-on: ubuntu-latest
         steps:
-            - uses: action/checkout@v3
+            - uses: actions/checkout@v3
             - uses: automate6500/keyword-release-action@master
               env:
                 GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
