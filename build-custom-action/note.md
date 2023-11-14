@@ -24,3 +24,6 @@ pull request
 
 each event has a different payload
 https://docs.github.com/en/rest/overview/github-event-types?apiVersion=2022-11-28
+
+自定义action包中，需要有一个metadata文件
+metadata必须存储为yaml格式，名称必须为action，完整文件名为action.yml或者action.yaml
